@@ -74,31 +74,35 @@ nav ul li a:hover {
   color: #3c434c;
 }
 
+/* Hero Section */
 .hero {
   position: relative;
-  height: 100vh;
+  background-image: url('assets/fotoaku.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   text-align: center;
   overflow: hidden;
-  color: white;
 }
 
-
-.overlay {
+.hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   max-width: 800px;
   padding: 2rem;
 }
@@ -122,6 +126,7 @@ nav ul li a:hover {
   background: #565656;
 }
 
+/* Section */
 .section {
   padding: 80px 20px;
   text-align: center;
@@ -131,6 +136,7 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 
+/* Carousel */
 .carousel-track {
   display: flex;
   gap: 20px;
@@ -162,6 +168,7 @@ nav ul li a:hover {
   display: block;
 }
 
+/* Grid & Cards */
 .bg-light {
   background: #f9f9f9;
 }
@@ -183,6 +190,7 @@ nav ul li a:hover {
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* Footer */
 footer {
   background: #f0f0f0;
   text-align: center;
@@ -191,6 +199,14 @@ footer {
   color: #555;
 }
 
+/* Kontak Section */
+.kontak {
+  text-align: left;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -206,42 +222,21 @@ footer {
   .gallery-item {
     width: 200px;
   }
-}
 
-.hero {
-  position: relative;
-  background-image: url('assets/fotoaku.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
+  .hero {
+    background-position: top center;
+    background-attachment: scroll;
+  }
 
-.hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* efek gelap transparan */
-  z-index: 1;
-}
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
+  .hero p {
+    font-size: 1rem;
+  }
 
-
-
-.kontak {
-  text-align: left;
-  margin: 10px;
-  padding: 20px;
+  .hero-content {
+    padding: 1rem;
+  }
 }
