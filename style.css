@@ -74,13 +74,6 @@ nav ul li a:hover {
   color: #3c434c;
 }
 
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
-
 /* Hero Section */
 .hero {
   position: relative;
@@ -95,6 +88,12 @@ nav ul li a:hover {
   color: white;
   text-align: center;
   overflow: hidden;
+  @media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
 }
 
 .hero .overlay {
